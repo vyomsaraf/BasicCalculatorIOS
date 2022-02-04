@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-nx-xzO">
+                                <rect key="frame" x="192" y="614" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Rlu-N2-cMy"/>
+                                    <constraint firstAttribute="width" constant="70" id="a7f-eu-tYM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="3">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="threeInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SAY-bJ-xMp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXt-0N-hqz">
+                                <rect key="frame" x="112" y="614" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Piz-c7-lkY"/>
+                                    <constraint firstAttribute="width" constant="70" id="vEA-Cj-rEF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="2">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="twoInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FbJ-pB-EfO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co7-oL-XJl">
+                                <rect key="frame" x="32" y="614" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0mE-Ye-K1n"/>
+                                    <constraint firstAttribute="height" constant="70" id="1WT-uL-Uh9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="oneInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ke-Cq-n68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2T-Um-x4d">
+                                <rect key="frame" x="192" y="534" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="lgM-U0-wmJ"/>
+                                    <constraint firstAttribute="height" constant="70" id="tmx-hi-cap"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="6">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sixInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xsk-nh-3Es"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dq-Fr-3tV">
+                                <rect key="frame" x="112" y="534" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5V1-dt-li0"/>
+                                    <constraint firstAttribute="height" constant="70" id="dfC-s6-9pe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="5">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fiveInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5X-OE-w4l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R1-rS-b8G">
+                                <rect key="frame" x="32" y="534" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="77k-Lb-etS"/>
+                                    <constraint firstAttribute="height" constant="70" id="yZE-dI-4Wi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="4">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fourInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skG-zW-xuR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-7F-MAB">
+                                <rect key="frame" x="192" y="454" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9m4-uf-qao"/>
+                                    <constraint firstAttribute="width" constant="70" id="p5r-Ig-9zp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="9">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nineInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsm-oB-eA6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STW-yP-tSg">
+                                <rect key="frame" x="192" y="374" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="lIa-Um-odr"/>
+                                    <constraint firstAttribute="width" constant="70" id="rXK-JM-tFZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="%">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="percentageFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCz-YS-QTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnX-fL-3vX">
+                                <rect key="frame" x="112" y="374" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="35h-UH-E00"/>
+                                    <constraint firstAttribute="width" constant="70" id="s0R-3H-nqp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BS">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="34"/>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backspaceAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2R7-h3-xQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDQ-Lb-q8a">
+                                <rect key="frame" x="32" y="374" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="YeA-jr-AK9"/>
+                                    <constraint firstAttribute="height" constant="70" id="zqg-rN-XH7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AC">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="34"/>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="allClearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7kS-zh-CNB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgB-uM-ylR">
+                                <rect key="frame" x="112" y="694" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9za-nQ-B7O"/>
+                                    <constraint firstAttribute="width" constant="70" id="Ej5-hf-vBn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="0">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zeroInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZ2-vu-ry2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEB-BG-IpB">
+                                <rect key="frame" x="192" y="694" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6ph-OJ-rvx"/>
+                                    <constraint firstAttribute="width" constant="70" id="tj8-C9-Nt7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=".">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="decimalInsertFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0Z-3C-7EV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0X-5S-NgK">
+                                <rect key="frame" x="112" y="454" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0Ya-g7-JWN"/>
+                                    <constraint firstAttribute="width" constant="70" id="mnb-jD-IYT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="8">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="eightInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1j0-cY-zoD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGP-Kn-Sgf">
+                                <rect key="frame" x="32" y="454" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="TfO-gR-7JR"/>
+                                    <constraint firstAttribute="height" constant="70" id="Uh8-Zy-pPI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="7">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sevenInsertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7V-L3-IaR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNg-s6-qmt">
+                                <rect key="frame" x="272" y="694" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Nw1-0o-CjX"/>
+                                    <constraint firstAttribute="height" constant="70" id="W6s-lN-va8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="=">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="computeFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uu-Xe-jEr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prc-7J-BqI">
+                                <rect key="frame" x="272" y="614" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PGw-S2-1K6"/>
+                                    <constraint firstAttribute="width" constant="70" id="TMI-09-50J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="additionFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enT-3Y-oUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-uj-yB7">
+                                <rect key="frame" x="272" y="534" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="UcX-SN-Wcl"/>
+                                    <constraint firstAttribute="height" constant="70" id="eO5-Ix-zbI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="796-4Q-rkr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-Ff-6zg">
+                                <rect key="frame" x="272" y="374" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YJ4-dy-14Y"/>
+                                    <constraint firstAttribute="width" constant="70" id="p65-b4-Qdc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="/">
+                                            <attributes>
+                                                <font key="NSFont" size="50" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="divideFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88u-XP-RQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-aP-ocn">
+                                <rect key="frame" x="272" y="454" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8Bj-pj-BRx"/>
+                                    <constraint firstAttribute="width" constant="70" id="mzq-nF-ci4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="X">
+                                            <attributes>
+                                                <font key="NSFont" size="36" name="Menlo-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="multiplyFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wS-WP-q6w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InM-So-P5j">
+                                <rect key="frame" x="20" y="224" width="310" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2mV-rr-Wke"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="prc-7J-BqI" firstAttribute="top" secondItem="Lvh-uj-yB7" secondAttribute="bottom" constant="10" id="039-At-KFd"/>
+                            <constraint firstItem="GEB-BG-IpB" firstAttribute="top" secondItem="ekT-nx-xzO" secondAttribute="bottom" constant="10" id="0lQ-Od-boQ"/>
+                            <constraint firstItem="C2T-Um-x4d" firstAttribute="leading" secondItem="1Dq-Fr-3tV" secondAttribute="trailing" constant="10" id="2mi-Q7-yZc"/>
+                            <constraint firstItem="Lvh-uj-yB7" firstAttribute="leading" secondItem="C2T-Um-x4d" secondAttribute="trailing" constant="10" id="3yA-ta-DM0"/>
+                            <constraint firstItem="InM-So-P5j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="3zR-5M-e0d"/>
+                            <constraint firstItem="Lvh-uj-yB7" firstAttribute="top" secondItem="qxX-aP-ocn" secondAttribute="bottom" constant="10" id="53o-7g-zX1"/>
+                            <constraint firstItem="STW-yP-tSg" firstAttribute="leading" secondItem="cnX-fL-3vX" secondAttribute="trailing" constant="10" id="5VA-ot-gLV"/>
+                            <constraint firstItem="dNg-s6-qmt" firstAttribute="top" secondItem="Lvh-uj-yB7" secondAttribute="bottom" constant="90" id="60S-ax-JcZ"/>
+                            <constraint firstItem="Co7-oL-XJl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="6mn-17-VPF"/>
+                            <constraint firstItem="GEB-BG-IpB" firstAttribute="leading" secondItem="rgB-uM-ylR" secondAttribute="trailing" constant="10" id="71X-9j-5fT"/>
+                            <constraint firstItem="rgB-uM-ylR" firstAttribute="top" secondItem="IXt-0N-hqz" secondAttribute="bottom" constant="10" id="8vi-Xy-v86"/>
+                            <constraint firstItem="7R1-rS-b8G" firstAttribute="top" secondItem="gGP-Kn-Sgf" secondAttribute="bottom" constant="10" id="9Wp-e8-byK"/>
+                            <constraint firstItem="C2T-Um-x4d" firstAttribute="top" secondItem="dSP-7F-MAB" secondAttribute="bottom" constant="10" id="BMb-Jj-wcw"/>
+                            <constraint firstItem="ekT-nx-xzO" firstAttribute="top" secondItem="C2T-Um-x4d" secondAttribute="bottom" constant="10" id="EDe-kq-rNz"/>
+                            <constraint firstItem="cnX-fL-3vX" firstAttribute="top" secondItem="InM-So-P5j" secondAttribute="bottom" id="Flw-KY-Jg6"/>
+                            <constraint firstItem="1Dq-Fr-3tV" firstAttribute="leading" secondItem="7R1-rS-b8G" secondAttribute="trailing" constant="10" id="K43-XH-l0R"/>
+                            <constraint firstItem="7R1-rS-b8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="LgT-t4-FMQ"/>
+                            <constraint firstItem="qxX-aP-ocn" firstAttribute="leading" secondItem="dSP-7F-MAB" secondAttribute="trailing" constant="10" id="NDH-gO-UpQ"/>
+                            <constraint firstItem="gGP-Kn-Sgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="NGt-Fn-w0X"/>
+                            <constraint firstItem="prc-7J-BqI" firstAttribute="leading" secondItem="ekT-nx-xzO" secondAttribute="trailing" constant="10" id="RYR-eX-QRr"/>
+                            <constraint firstItem="dNg-s6-qmt" firstAttribute="leading" secondItem="GEB-BG-IpB" secondAttribute="trailing" constant="10" id="Rjq-Th-eCX"/>
+                            <constraint firstItem="IXt-0N-hqz" firstAttribute="top" secondItem="1Dq-Fr-3tV" secondAttribute="bottom" constant="10" id="V7w-Zr-TQY"/>
+                            <constraint firstItem="rgB-uM-ylR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="VIB-IL-PlV"/>
+                            <constraint firstItem="dKt-Ff-6zg" firstAttribute="leading" secondItem="STW-yP-tSg" secondAttribute="trailing" constant="10" id="Xr2-Gx-4pZ"/>
+                            <constraint firstItem="1Dq-Fr-3tV" firstAttribute="top" secondItem="P0X-5S-NgK" secondAttribute="bottom" constant="10" id="ZhT-jB-ScA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="InM-So-P5j" secondAttribute="trailing" constant="60" id="b5I-sX-eaj"/>
+                            <constraint firstItem="gGP-Kn-Sgf" firstAttribute="top" secondItem="mDQ-Lb-q8a" secondAttribute="bottom" constant="10" id="c4y-4s-Qpj"/>
+                            <constraint firstItem="ekT-nx-xzO" firstAttribute="leading" secondItem="IXt-0N-hqz" secondAttribute="trailing" constant="10" id="eAt-gi-vfs"/>
+                            <constraint firstItem="IXt-0N-hqz" firstAttribute="leading" secondItem="Co7-oL-XJl" secondAttribute="trailing" constant="10" id="f4f-UY-itT"/>
+                            <constraint firstItem="Co7-oL-XJl" firstAttribute="top" secondItem="7R1-rS-b8G" secondAttribute="bottom" constant="10" id="gQi-Ag-sG3"/>
+                            <constraint firstItem="dSP-7F-MAB" firstAttribute="leading" secondItem="P0X-5S-NgK" secondAttribute="trailing" constant="10" id="gSO-mH-7x4"/>
+                            <constraint firstItem="dSP-7F-MAB" firstAttribute="top" secondItem="STW-yP-tSg" secondAttribute="bottom" constant="10" id="hwf-mS-SJb"/>
+                            <constraint firstItem="mDQ-Lb-q8a" firstAttribute="top" secondItem="InM-So-P5j" secondAttribute="bottom" id="j27-qS-A51"/>
+                            <constraint firstItem="qxX-aP-ocn" firstAttribute="top" secondItem="dKt-Ff-6zg" secondAttribute="bottom" constant="10" id="o0L-x5-nE2"/>
+                            <constraint firstItem="mDQ-Lb-q8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="o9J-R4-eF4"/>
+                            <constraint firstItem="InM-So-P5j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oj9-my-7MM"/>
+                            <constraint firstItem="P0X-5S-NgK" firstAttribute="top" secondItem="cnX-fL-3vX" secondAttribute="bottom" constant="10" id="qR7-5C-GAW"/>
+                            <constraint firstItem="dKt-Ff-6zg" firstAttribute="top" secondItem="InM-So-P5j" secondAttribute="bottom" id="smg-Zz-KBW"/>
+                            <constraint firstItem="P0X-5S-NgK" firstAttribute="leading" secondItem="gGP-Kn-Sgf" secondAttribute="trailing" constant="10" id="tYU-JS-Hve"/>
+                            <constraint firstItem="STW-yP-tSg" firstAttribute="top" secondItem="InM-So-P5j" secondAttribute="bottom" id="yNW-1J-yt1"/>
+                            <constraint firstItem="cnX-fL-3vX" firstAttribute="leading" secondItem="mDQ-Lb-q8a" secondAttribute="trailing" constant="10" id="yuG-7L-IAP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allClearButton" destination="mDQ-Lb-q8a" id="IqM-cH-mPF"/>
+                        <outlet property="calculatrDisplay" destination="InM-So-P5j" id="61e-dE-4Gc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="83.886255924170612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
